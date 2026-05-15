@@ -2,6 +2,7 @@
 
 umask 0022
 
+
 start_process() {
   "$@" &
   CHILD=$!; wait "$CHILD"; CHILD="";
